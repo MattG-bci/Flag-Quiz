@@ -2,8 +2,6 @@ import os
 import pygame
 
 
-
-
 if __name__ == "__main__":
     pygame.init()
     X = 838
@@ -22,7 +20,6 @@ if __name__ == "__main__":
                 path_flag = path + "/" + flag
                 flag_name = flag.replace(".jpeg", "")
                 flag_img = pygame.image.load(path_flag).convert()
-                print(flags)
 
                 screen.blit(flag_img, (0, 0))
                 pygame.display.flip()
